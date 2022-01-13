@@ -10,6 +10,7 @@ jobs:
       - image: cimg/base:stable
 
     steps:
+      - checkout
       - run:
         name: "done"
         command: |
