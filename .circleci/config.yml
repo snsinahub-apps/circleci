@@ -9,13 +9,8 @@ jobs:
     docker:
       - image: cimg/base:stable
 
-    steps:
-      - checkout
-      - run:
-        name: "done"
-        command: |
-          echo Job is completed! |
-          echo Done!
+    steps:      
+      - run: echo Job is completed!
   say-hello:
     # Specify the execution environment. You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
     # See: https://circleci.com/docs/2.0/configuration-reference/#docker-machine-macos-windows-executor
